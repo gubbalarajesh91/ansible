@@ -1,0 +1,10 @@
+- name: variables
+  hosts: localhost
+  vars:
+    Course: "Ansible"
+    Class: "DevOps"
+    Time: "07:30 AM"
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, I am learing {{Course}} from Join {{Class}} at {{Time}}"
