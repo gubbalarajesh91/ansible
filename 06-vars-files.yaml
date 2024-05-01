@@ -1,0 +1,8 @@
+- name: Variable From Files
+  hosts: local hosts
+  vars_file:
+  - vars.yaml
+  tasks:
+  - name: print override information
+    ansisble.builtin.debug:
+      msg: "I am learing {{Course}} from Join {{Class}} at {{Time}}"
