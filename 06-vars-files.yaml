@@ -4,5 +4,5 @@
   - vars.yaml
   tasks:
   - name: print override information
-    ansisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "I am learing {{Course}} from Join {{Class}} at {{Time}}"
