@@ -13,6 +13,6 @@ name: variables
     ansible.builtin.debug:
       msg: "Hi, I am learing {{Course}} from Join {{Class}} at {{Time}}"
 
-  -name: print information
+  - name: print information
     ansible.builtin.debug:
       msg: "Hi, I am learing {{Course}} from Join {{Class}} at {{Time}}"
