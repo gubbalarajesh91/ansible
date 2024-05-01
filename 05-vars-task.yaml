@@ -1,4 +1,4 @@
-name: variables
+- name: variables
   hosts: localhost
   vars:
     Course: "Ansible"
@@ -15,4 +15,4 @@ name: variables
 
   - name: print information
     ansible.builtin.debug:
-      msg: "Hi, I am learing {{Course}} from Join {{Class}} at {{Time}}"
+     msg: "Hi, I am learing {{Course}} from Join {{Class}} at {{Time}}"
