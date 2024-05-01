@@ -1,5 +1,5 @@
-- name: Variable From Files
-  hosts: local hosts
+- name: variable From Files
+  hosts: localhosts
   vars_file:
   - vars.yaml
   tasks:
