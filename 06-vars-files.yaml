@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: db
+  hosts: localhost
   vars_files:
   - vars.yaml
   tasks:
