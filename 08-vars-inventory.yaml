@@ -1,7 +1,8 @@
 - name: variables from files
   hosts: localhost
-  
+  vars:
+    Total: "90 mins"
   tasks:
   - name: print override information
     ansible.builtin.debug:
-      msg: "I am learing {{Course}} from Join {{Class}} at {{Time}}"
+      msg: "I am learing {{Course}} from Join {{Class}} at {{Time}} Duration {{Total}}"
