@@ -1,6 +1,6 @@
 - name: variables from files
-  hosts: localhost
-    web
+  hosts:
+    localhost
   
   tasks:
   - name: print override information
