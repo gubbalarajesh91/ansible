@@ -2,7 +2,7 @@
   hosts:
     localhost
   vas_files:
-   -vars.yaml
+   - vars.yaml
   tasks:
   - name: print override information
     ansible.builtin.debug:
