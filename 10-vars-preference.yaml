@@ -1,0 +1,8 @@
+- name: Variable preferences
+  hosts: localhost
+  vars:
+    WISHES: "Morning from PLAY variable"
+  tasks:
+  - name: "Moniring from TASK Variable"
+    ansible.builtin.debug:
+      msg: " Hi Good {{WISHES}}"
