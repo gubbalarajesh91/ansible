@@ -18,5 +18,11 @@
 
 # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 10-vars-preference.yaml -e "WISHES=Monring from args"
 #No space will encorage
+#1 arguments
 #2 TASK level
 #3 Variable file
+#4 Propmt
+#5 Play Level
+#6 Inventory.ini 
+#7 Role level
+#preference sequence
