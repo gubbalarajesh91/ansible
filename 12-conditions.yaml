@@ -5,3 +5,8 @@
   tasks:
   - name: check the exist user
     ansible.builtin.command: id expense
+    ignore_errors: true
+
+  - name: Say Hello
+    ansible.builtin.debug:
+     msg: "Say Hi"
