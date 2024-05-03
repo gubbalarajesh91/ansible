@@ -12,6 +12,13 @@
     ansible.builtin.debug:
       msg: " User Info: {{USER}}"
 
+  - name: Create User
+    ansible.builtin.command: adduser expense
+    WHEN: USER.rc != 0
+
+    # "msg": " User Info: {'changed': True, 'stdout': '', 'stderr': 'id: ‘expense’: no such user', 'rc': 1, 'cmd': ['id', 'expense'], #'start': '2024-05-03 12:46:17.624661', 'end': '2024-05-03 12:46:17.631090', 'delta': '0:00:00.006429', 'failed': True, 'msg': 'non-zero #return code', 'stdout_lines': [], 'stderr_lines': ['id: ‘expense’: no such user']}
+
+
   - name: Say Hello
     ansible.builtin.debug:
      msg: "Say Hi"
