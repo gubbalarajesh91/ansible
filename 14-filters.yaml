@@ -26,6 +26,14 @@
     ansible.builtin.debug:
       msg: "{{call | upper}}"
 
+- name: Filters default value Play-3
+  hosts: localhost
+  vars:
+    call: "Hello to all"
+  tasks:
+  - name: upper play level
+    ansible.builtin.debug:
+      msg: "{{call | lower}}"
 
 #default('Ansible')- use qotes 'Char' for string
 #default(1000)- dont use qotes for numbers
