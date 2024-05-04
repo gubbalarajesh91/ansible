@@ -20,7 +20,7 @@
 - name: Filters default value
   hosts: localhost
   vars:
-    call: 'Hello to all'
+    call: "Hello to all"
   tasks:
   - name: upper play level
     ansible.builtin.debug:
