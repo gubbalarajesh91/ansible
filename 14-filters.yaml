@@ -14,7 +14,7 @@
   - name: upper case
     vars:
       greetings: "Hello, Good Morning"
-    ansible.builting.debug:
+    ansible.builtin.debug:
       msg: "{{greetings | upper}}"
 
 
