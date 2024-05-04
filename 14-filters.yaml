@@ -87,7 +87,7 @@
   hosts: localhost
   vars:
     my_items:
-    - ['key': 'Course', 'value': 'Ansible']
+    - {'key': 'Course', 'value': 'Ansible'} #Only flower brace work [] will not for
     - {'key': 'Trainer', 'value': 'Shiva'}
     - {'key': 'Duration', 'value': '120hrs'}
   tasks:
