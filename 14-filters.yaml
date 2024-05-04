@@ -11,6 +11,12 @@
     ansible.builtin.debug:
       msg: "Love you {{Course | default(3000) }}!"
 
+  - name: upper case
+    vars:
+      greetings: "Hello, Good Morning"
+    ansible.builting.debug:
+      msg: "{{greetings | upper}}"
+
 
 #default('Ansible')- use qotes 'Char' for string
 #default(1000)- dont use qotes for numbers
