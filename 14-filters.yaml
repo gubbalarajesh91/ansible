@@ -24,7 +24,7 @@
   tasks:
   - name: upper play level
     ansible.builtin.debug:
-      msg: {{call | upper}}
+      msg: "{{call | upper}}""
 
 
 #default('Ansible')- use qotes 'Char' for string
