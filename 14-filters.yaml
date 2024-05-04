@@ -93,7 +93,7 @@
   tasks:
   - name: after convert
     ansible.builtin.debug:
-      msg: "Before convert: { my_items | items2dict }"
+      msg: "Before convert: {{ my_items | items2dict }}"
 
 
 
