@@ -71,9 +71,9 @@
   hosts: localhost
   vars:
     my_dict: #this is called as a dictonary or map or key/value pairs
-    Course: Ansible
-    Trainer: Shiva
-    Duration: 120hrs
+      Course: Ansible
+      Trainer: Shiva
+      Duration: 120hrs
   tasks:
   - name: before convert
     ansible.builtin.debug:
