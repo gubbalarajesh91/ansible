@@ -83,6 +83,17 @@
     ansible.builtin.debug:
       msg: "Before convert: {{ my_dict | dict2items }}"
 
+- name: convert items to dict
+  hosts: localhost
+  vars:
+    my_items:
+    - {'key': 'Course', 'value': 'Ansible'}
+    - {'key': 'Trainer', 'value': 'Shiva'}
+    - {'key': 'Duration', 'value': '120hrs'}
+   ansible.builtin.debug:
+      msg: "Before convert: {{ my_items | items2dict }}"
+
+
 
 #default('Ansible')- use qotes 'Char' for string
 #default(1000)- dont use qotes for numbers
