@@ -4,8 +4,10 @@
   - name: print default values
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible') }}"
+  - name: print default number
     ansible.builtin.debug:
       msg: "Hello {{Course | default(3000) }}"
+  - name: print default specaial char
     ansible.builtin.debug:
       msg: "Hello {{Course | default(3000!) }}"
 
