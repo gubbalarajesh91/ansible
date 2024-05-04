@@ -87,8 +87,8 @@
   hosts: localhost
   vars:
     my_items:
-    - {'key': 'Course', 'value': 'Ansible'}
-    - {'key': 'Trainer', 'value': 'Shiva'}
+    - 'key': 'Course', 'value': 'Ansible'
+    - 'key': 'Trainer', 'value': 'Shiva'
     - {'key': 'Duration', 'value': '120hrs'}
   tasks:
   - name: after convert
