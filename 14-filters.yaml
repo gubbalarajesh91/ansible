@@ -31,7 +31,7 @@
   vars:
     call: "Hello to all"
   tasks:
-  - name: upper play level
+  - name: lower play level
     ansible.builtin.debug:
       msg: "{{call | lower}}"
 
