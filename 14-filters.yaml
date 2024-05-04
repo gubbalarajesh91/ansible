@@ -3,4 +3,8 @@
   tasks:
   - name: print default values
     ansible.builtin.debug:
-      msg: "Hello {{Course | default(1000) }}"
+      msg: "Hello {{Course | default('Ansible') }}"
+
+
+#default('Ansible')- use qotes 'Char' for string
+#default(1000)- dont use qotes for numbers
