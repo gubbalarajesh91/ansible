@@ -67,5 +67,22 @@
     ansible.builtin.debug:
       msg: "min age {{ages | min}}, max age {{ages | max}}"
 
+- name: covert numbers
+  hosts: localhost
+  vars:
+    my_dict: #this is called as a dictonary or map or key/value pairs
+    Course: Ansible
+    Trainer: Shiva
+    Duration: 120hrs
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_dict}}"
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "Before convert: {{my_dict | dict2items }}"
+
+
 #default('Ansible')- use qotes 'Char' for string
 #default(1000)- dont use qotes for numbers
