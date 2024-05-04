@@ -77,11 +77,11 @@
   tasks:
   - name: before convert
     ansible.builtin.debug:
-      msg: "Before convert: {{my_dict}}"
+      msg: "Before convert: {{ my_dict}}"
 
   - name: after convert
     ansible.builtin.debug:
-      msg: "Before convert: {{my_dict | dict2items }}"
+      msg: "Before convert: {{ my_dict | dict2items }}"
 
 
 #default('Ansible')- use qotes 'Char' for string
