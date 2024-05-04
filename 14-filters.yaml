@@ -5,7 +5,7 @@
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible') }}"
       msg: "Hello {{Course | default(3000) }}"
-      msg: "Hello {{Course | default(3000!) }}"
+      #msg: "Hello {{Course | default(3000!) }}"
 
 
 #default('Ansible')- use qotes 'Char' for string
