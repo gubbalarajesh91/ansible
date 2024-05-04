@@ -35,5 +35,14 @@
     ansible.builtin.debug:
       msg: "{{call | lower}}"
 
+- name: Remove duplicate
+  hosts: localhost
+  tasks:
+  - name: remove duplicate
+    vars:
+      numbers: [1, 2, 2, 3, 3, 3, 4,]
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
+
 #default('Ansible')- use qotes 'Char' for string
 #default(1000)- dont use qotes for numbers
