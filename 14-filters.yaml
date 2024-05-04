@@ -4,8 +4,10 @@
   - name: print default values
     ansible.builtin.debug:
       msg: "Hello {{Course | default('Ansible') }}"
+    ansible.builtin.debug:
       msg: "Hello {{Course | default(3000) }}"
-      #msg: "Hello {{Course | default(3000!) }}"
+    ansible.builtin.debug:
+      msg: "Hello {{Course | default(3000!) }}"
 
 
 #default('Ansible')- use qotes 'Char' for string
