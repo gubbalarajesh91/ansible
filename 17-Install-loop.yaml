@@ -1,0 +1,13 @@
+- name: Install and Uninstall in Loop
+  hosts:
+    web
+  become: yes
+  tasks:
+  - name: Main Task
+    ansible.builtin.dnf:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: 'mysql', state: 'latest'} #item and state
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'prefix', state: 'absent'}
