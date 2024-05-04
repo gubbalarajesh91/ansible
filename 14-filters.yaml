@@ -17,7 +17,7 @@
     ansible.builtin.debug:
       msg: "{{greetings | upper}}"
 
-- name: Filters default value
+- name: Filters default value Play-2
   hosts: localhost
   vars:
     call: "Hello to all"
