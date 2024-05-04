@@ -1,0 +1,12 @@
+- name: Install apps
+  hosts: web
+  become: yes
+  tasks:
+  - name: Install Nginx mysql
+    ansible.builtin.dnf:
+     name: "{{ item }}"
+     state: latest
+     loop:
+     -mysql
+     -nginx
+     -postfix
