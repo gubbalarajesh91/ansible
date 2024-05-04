@@ -90,7 +90,9 @@
     - {'key': 'Course', 'value': 'Ansible'}
     - {'key': 'Trainer', 'value': 'Shiva'}
     - {'key': 'Duration', 'value': '120hrs'}
-   ansible.builtin.debug:
+  tasks:
+  - name: after convert
+    ansible.builtin.debug:
       msg: "Before convert: {{ my_items | items2dict }}"
 
 
